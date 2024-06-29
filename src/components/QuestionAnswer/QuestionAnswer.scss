@@ -1,0 +1,47 @@
+.question-answer {
+	color: #000;
+}
+.question {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 178%;
+	cursor: pointer;
+	padding: 24px 0;
+	border-top: 1px solid #f6f8fa;
+	transition: color 0.2s ease-out;
+	&:hover {
+		color: #2a6cea;
+
+		path {
+			fill: #2a6cea;
+		}
+		circle {
+			stroke: #2a6cea;
+		}
+	}
+}
+.answer {
+	display: none;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
+	padding: 0 1rem;
+	background-color: #fff;
+
+	font-size: 18px;
+	line-height: 178%;
+	color: #5e646a;
+	&.open {
+		display: block;
+		overflow: visible;
+		padding: 10px 0;
+	}
+}
+.svg-container {
+	transition: transform 0.2s ease-in-out;
+	&.open {
+		transform: rotate(45deg);
+	}
+}

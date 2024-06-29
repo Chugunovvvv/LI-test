@@ -1,0 +1,47 @@
+.swiper-item {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 8px;
+	padding: 22px;
+	box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.1);
+	background: #fff;
+	// width: 341px;
+	height: 316px;
+	overflow: auto;
+	&__header {
+		display: flex;
+		gap: 16px;
+		align-items: center;
+	}
+
+	&__header-img {
+	}
+
+	&__header-info {
+	}
+
+	&__header-person {
+	}
+
+	&__header-person-name {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 150%;
+		color: #000;
+	}
+
+	&__header-person-city {
+		font-size: 12px;
+		line-height: 133%;
+		color: #5e646a;
+	}
+
+	&__content {
+	}
+
+	&__text {
+		line-height: 171%;
+		color: #000;
+	}
+}

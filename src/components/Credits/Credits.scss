@@ -1,0 +1,29 @@
+.credits {
+	padding: clamp(3.5rem, 3.2rem + 1.5vw, 5rem) 0;
+	background-color: #f6f8fa;
+
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+		align-items: flex-start;
+		gap: 32px;
+		@media (max-width: 475px) {
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+		li {
+			display: flex;
+			flex-direction: column;
+			gap: 17px;
+			color: #000;
+			span {
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 178%;
+			}
+			p {
+				font-size: 16px;
+				line-height: 175%;
+			}
+		}
+	}
+}

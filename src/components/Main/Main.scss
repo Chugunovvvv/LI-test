@@ -1,0 +1,33 @@
+.hero {
+	background-image: url('./main/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 26px;
+	padding-bottom: clamp(8.063rem, 5.762rem + 11.5vw, 19.563rem);
+}
+.main {
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		max-width: 748px;
+		margin: auto;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: clamp(1.5rem, 1.15rem + 1.75vw, 3.25rem);
+		line-height: 123%;
+
+		margin-bottom: clamp(0.625rem, 0.525rem + 0.5vw, 1.125rem);
+	}
+
+	&__subtitle {
+		font-size: 18px;
+		line-height: 178%;
+		margin-bottom: clamp(1.625rem, 0.8rem + 4.13vw, 5.75rem);
+	}
+}
