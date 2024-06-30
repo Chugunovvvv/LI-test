@@ -16,14 +16,26 @@
 		stroke: #191c1f;
 		stroke-width: 2;
 	}
-	&:hover {
-		color: #2a6cea;
-
-		path {
-			fill: #2a6cea;
+	@media (hover: hover) {
+		&:hover {
+			color: #2a6cea;
+			path {
+				fill: #2a6cea;
+			}
+			circle {
+				stroke: #2a6cea;
+			}
 		}
-		circle {
-			stroke: #2a6cea;
+	}
+	@media (hover: none) {
+		&:active {
+			color: #2a6cea;
+			path {
+				fill: #2a6cea;
+			}
+			circle {
+				stroke: #2a6cea;
+			}
 		}
 	}
 }
