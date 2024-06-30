@@ -1,9 +1,9 @@
 import { FC } from 'react'
 import Header from '../Header/Header'
 import Button from '../UI/Button/Button'
-import './Main.scss'
+import './Home.scss'
 
-const Main: FC = () => {
+const Home: FC = () => {
 	return (
 		<div className='hero'>
 			<Header />
@@ -22,4 +22,4 @@ const Main: FC = () => {
 	)
 }
 
-export default Main
+export default Home
