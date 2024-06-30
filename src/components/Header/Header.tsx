@@ -10,7 +10,7 @@ const Header: FC = () => {
 		<header className='header content'>
 			<a href='' className='header__logo'>
 				<img
-					src={active ? './logo-black.svg' : 'logo.svg'}
+					src={active ? './logo-black.svg' : './logo.svg'}
 					alt='Логотип Лаборатории интернет'
 				/>
 			</a>
