@@ -1,0 +1,46 @@
+.mobileButton {
+  position: relative;
+  display: none;
+  width: 50px;
+  height: 28px;
+  z-index: 50;
+}
+@media (max-width: 768px) {
+  .mobileButton {
+    display: block;
+  }
+}
+@media (max-width: 475px) {
+  .mobileButton {
+    width: 40px;
+    height: 23px;
+  }
+}
+.mobileButton span {
+  position: absolute;
+  top: calc(50% - 1.5px);
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.mobileButton span:first-child {
+  top: 0;
+}
+.mobileButton span:last-child {
+  top: auto;
+  bottom: 0;
+}
+.mobileButton.active span {
+  background-color: #000;
+  transform: scale(0);
+}
+.mobileButton.active span:first-child {
+  top: calc(50% - 1.5px);
+  transform: rotate(45deg);
+}
+.mobileButton.active span:last-child {
+  bottom: calc(50% - 1.5px);
+  transform: rotate(-45deg);
+}

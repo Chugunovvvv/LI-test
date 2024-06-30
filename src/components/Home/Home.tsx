@@ -1,11 +1,12 @@
 import { FC } from 'react'
 import Header from '../Header/Header'
 import Button from '../UI/Button/Button'
+import bg from '/public/main/bg.jpg'
 import './Home.scss'
 
 const Home: FC = () => {
 	return (
-		<div className='hero'>
+		<div className='hero' style={{ backgroundImage: bg }}>
 			<Header />
 			<section className='main content'>
 				<div className='main__content'>
