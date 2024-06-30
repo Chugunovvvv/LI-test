@@ -44,17 +44,15 @@ const Reviews: FC = () => {
 					modules={[Navigation, Pagination]}
 				>
 					{swiper_content.map(swiper => (
-						<>
-							<SwiperSlide className='swiper-wrap' key={swiper.id}>
-								<SwiperItem
-									name={swiper.name}
-									img={swiper.img}
-									alt={swiper.alt}
-									city={swiper.city}
-									text={swiper.text}
-								/>
-							</SwiperSlide>
-						</>
+						<SwiperSlide className='swiper-wrap' key={swiper.id}>
+							<SwiperItem
+								name={swiper.name}
+								img={swiper.img}
+								alt={swiper.alt}
+								city={swiper.city}
+								text={swiper.text}
+							/>
+						</SwiperSlide>
 					))}
 				</Swiper>
 				<div className='custom-next custom-navigation-button'></div>

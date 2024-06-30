@@ -12,6 +12,10 @@
 	padding: 24px 0;
 	border-top: 1px solid #f6f8fa;
 	transition: color 0.2s ease-out;
+	circle {
+		stroke: #191c1f;
+		stroke-width: 2;
+	}
 	&:hover {
 		color: #2a6cea;
 
