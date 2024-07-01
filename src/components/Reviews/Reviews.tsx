@@ -34,7 +34,7 @@ const Reviews: FC = () => {
 							slidesPerView: 3,
 						},
 						1600: {
-							slidesPerView: 5,
+							slidesPerView: 4,
 						},
 					}}
 					pagination={{
